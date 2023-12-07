@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  .container{
+    margin: 0 9rem;
+    height: 100%;
+  }
+  body {
+    font-family: 'Heebo', sans-serif;
+    background-color: white;
+  }
+  .header{
+    background-color: rgb(237, 237, 237);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+   
+  }
+  .header .container{
+    position: relative;
+    top: 20px;
+  }
+ nav .logo{
+    width: 100px;
+ }
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+ }
+ ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+ }
+ li{
+    position: relative;
+    right: 20px;
+ }
+ a{
+    text-decoration: none;
+    padding-left:20px ;
+    color: black;
+    transition: 0.3s ease;
+
+ }
+ a:hover,
+ .asa{
+    color: green;
+
+ }
+ .asa::after,
+ a:hover::after{
+    content: "";
+    width: 40%;
+    height: 4px;
+    background-color: rgb(5, 191, 54);
+    position: absolute;
+    bottom: -6px;
+    left: 20px;
+ }
+ .hero{
+    background-image: url(../imgs/hero4.png);
+  height: 100vh;
+  background-size: cover;
+ }
+  .hero .col-1{
+    position: relative;
+    top: 20em;
+    
+  }
+  .hero  .col-1 h4{
+    margin-bottom: 10px;
+  }
+.hero .row .col-1 h2{
+ font-size: 30px;
+ text-transform: capitalize;
+ margin-bottom: 5px;
+
+}
+.hero .col-1 h1{
+color: green;
+margin-bottom:15px ;
+}
+.hero .col-1 p{
+    margin-bottom:15px ;
+
+}
+.hero button{
+    background-image: url(../imgs/button.png);
+    background-color: transparent;
+    color: green;
+    padding: 14px 80px 14px 65px;
+    border: none;
+  
+}
+.feature{
+    position: relative;
+    top: 60px;
+    right: auto;
+    margin-bottom: 10em;
+    text-align: center;
+    margin-top: 5em;
+}
+.feature .container .row{
+    display: grid;
+    grid-template-columns: repeat(2px);
+}
+.feature .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+  }
+  
+  .feature .container .row > div {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius:3px ;
+  }
+  
+  .feature .container .row img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 20px;
+  }
+  
+  .feature .container .row h6 {
+    margin-top: 30px;
+    
+  }
+  .feature .container .row .box-1{
+    height: 11em;
+    width: 11em;
+  }
+  .feature .container .row .box-2{
+    height: 11em;
+    width: 11em;
+  }
+  .feature .container .row .box-3{
+    height: 11em;
+    width: 11em;
+  }
+  .feature .container .row .box-4{
+    height: 11em;
+    width: 11em;
+  }
+  .feature .container .row .box-5{
+    height: 11em;
+    width: 11em;
+  }
+  .feature .container .row .box-6{
+    height: 11em;
+    width: 11em;
+  }
+  .feature .container .row .box-1,
+.feature .container .row .box-2,
+.feature .container .row .box-3,
+.feature .container .row .box-4,
+.feature .container .row .box-5,
+.feature .container .row .box-6 {
+    height: 11em;
+    width: 11em;
+    transition: transform 0.5s;
+}
+
+.feature .container .row .box-1:hover,
+.feature .container .row .box-2:hover,
+.feature .container .row .box-3:hover,
+.feature .container .row .box-4:hover,
+.feature .container .row .box-5:hover,
+.feature .container .row .box-6:hover {
+    transform: scale(1.2); /* Adjust the scaling factor as needed */
+}
+
+  .special{
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+   
+}
+.special:hover{
+background-color: green;
+background-position: right;
+transform: translatex(-50px);
+}
+.move{
+  margin-left: 300px;
+}
+.special+ p {
+    text-align: center;
+    color: rgb(62, 59, 59);
+    margin: 15px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.about {
+  margin-top: 7em;
+  margin-right: 50px;
+  margin-bottom: 15em;
+}
+ .about .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 40em;
+  height: 30em;
+}
+
+.about .col-1, .col-2, .col-3, .col-4,.col-5,.col-6,.col-7,.col-8 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  text-align: center;
+  width: 18em;
+  height: 22em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ 
+
+}
+.about .col-1,
+.about .col-2,
+.about .col-3,
+.about .col-4,
+.about .col-5,
+.about .col-6,
+.about .col-7,
+.about .col-8 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  text-align: center;
+  width: 18em;
+  height: 22em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease; /* Add transition for a smooth effect */
+}
+
+.about .col-1:hover,
+.about .col-2:hover,
+.about .col-3:hover,
+.about .col-4:hover,
+.about .col-5:hover,
+.about .col-6:hover,
+.about .col-7:hover,
+.about .col-8:hover {
+  transform: scale(1.1); /* Scale the element by 1.1 on hover */
+}
+
+.about img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about p {
+  margin-top: 2px;
+  
+  margin-bottom: 2px;
+  display: flex;
+}
+
+.about h2 {
+  font-size: 20px;
+  margin:  0;
+  text-transform: capitalize;
+  display: flex;
+
+}
+
+.about i {
+  color: gold;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  right: 80px;
+}
+
+.about.shop h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about.fa-shopping-cart {
+  font-size: 30px;
+  color: #3498db;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+ 
+}
+.about .row .shop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.about .row .shop i{
+  position: relative;
+  right: 10px;
+  color: green;
+  background-color: rgb(178, 210, 199);
+ 
+  font-size: large;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.about .row .shop h4{
+  color: green;
+  padding: 0 5px;
+
+}
+.about .row .shop :hover{
+  background-color: green;
+  color: white;
+}
